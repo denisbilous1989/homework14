@@ -1,0 +1,6 @@
+@mixin card {
+  text-align: center;
+  padding: 10px 40px;
+  font-size: $base_font_size - 2px;
+  line-height: $base_line_height - 5px;
+}

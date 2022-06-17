@@ -1,0 +1,25 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 75px 0 0 0;
+
+      li {
+        width: 30%;
+      }
+}
+
+.card {
+  @include card;
+
+    a {
+      text-decoration: underline;
+      transition: all 0.5s;
+
+          &:hover {
+            text-shadow: 2px 2px 4px $black;
+            color: $orange;
+            text-decoration: none;
+          }
+    }
+}

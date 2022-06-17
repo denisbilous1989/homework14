@@ -1,0 +1,126 @@
+#footer {
+  padding: 100px 0 50px 0;
+  background: $gray;
+
+      .list {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        font-size: $base_font_size - 5px;
+        line-height: calc($base_line_height / 2);
+
+        img {
+          display: block;
+          margin: 15px 0;
+        }
+
+        p {
+          margin: 0 0 15px 0;
+        }
+
+        .card {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          max-width: 300px;
+          padding: 0;
+          margin-right: 60px;
+          text-align: start;
+
+              a {
+                text-decoration: none;
+                font-weight: $big_font_weight;
+                font-size: $base_font_size;
+                line-height: $base_line_height;
+              }
+        }
+
+        > li {
+            margin: 0 15px;
+
+                &:first-child {
+                  margin-left: 0;
+                }
+
+                &:last-child {
+                  margin-right: 0;
+                }
+        } 
+
+        h2 {
+          font-size: $base_font_size * 2;
+          line-height: $base_line_height + 20px;
+          margin: 0 0 15px 0;
+        }
+
+        h3 {
+          margin: 0 0 13px 0;
+          font-size: 20px;
+          line-height: $base_line_height - 5px;
+        }
+
+        .product li,
+        .support li,
+        .company li,
+        .legal li {
+          margin: 15px 0;
+        }
+
+        .product a,
+        .support a,
+        .company a,
+        .legal a {
+          transition: all 0.5s;
+
+              &:hover {
+                color: #ff6336;
+                text-shadow: 2px 2px 4px $black;
+              }
+        }
+      }
+
+      .navigation {
+        display: block;
+
+            &:after {
+              content: '';
+              display: block;
+              height: 1px;
+              background: $black;
+              margin: 95px 0 0 0;
+            }
+      }
+}
+
+.underline {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: $base_font_size - 8px;
+  line-height: calc($base_line_height / 2);
+
+      p {
+        margin: 0;
+      }
+
+      &__logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+            p {
+              margin: 0 0 0 7px;
+              max-width: 300px;
+            }
+
+            img {
+              display: block;
+              margin: 0 7px 0 0;
+              transition: all 0.5s;
+
+                  &:hover {
+                    transform: scale(1.3);
+                  }
+            }
+      }
+}

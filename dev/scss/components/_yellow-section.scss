@@ -1,0 +1,23 @@
+.yellow_section {
+  padding: 120px 0;
+  background: $yellow;
+
+      h2 {
+        text-align: center;
+      }
+
+      h3 {
+        font-size: $base_font_size + 5px;
+        line-height: $base_line_height +5px;
+      }
+
+      a {
+        transition: all 0.5s;
+
+            &:hover {
+              text-shadow: 2px 2px 4px $black;
+              color: $orange;
+              text-decoration: none;
+            }
+      }
+}
